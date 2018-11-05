@@ -1,0 +1,41 @@
+<div class="list-group">
+
+
+
+  <style>
+  table, th , td  {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 5px;
+  }
+  table tr:nth-child(odd) {
+    background-color: #f1f1f1;
+  }
+  table tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+  </style>
+
+
+
+
+  <table>
+    <tr>
+      <th>Flight Number</th>
+      <th>Push-back</th>
+      <th>Take-off</th>
+    </tr>
+    <tr *ngFor="let task of tasks">
+      <td >
+      {{task.itemName}}
+      </td>
+      <td >
+      {{task.itemNumber}}
+      </td>
+      <td >
+      {{task.itemNumber2}}
+      </td>
+    </tr>
+  </table>
+
+</div>
